@@ -1,0 +1,7 @@
+/ollama/*
+/open-webui/*
+
+!/ollama/.gitkeep
+!/open-webui/.gitkeep
+
+
