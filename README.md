@@ -24,6 +24,7 @@ To start the services, run the following command in the directory containing the
 ```bash
 docker compose up -d
 ```
+Now you have a Docker container ready to run the Open WebUI. Access the Open WebUI application at http://localhost:3000 in your web browser.
 
 ### Stop Services
 To stop the services, run the following command:
