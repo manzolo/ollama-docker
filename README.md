@@ -47,3 +47,13 @@ docker logs open-webui
 ## References
 - [NVIDIA Container Toolkit Installation Guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 - [Docker Official Website](https://docs.docker.com/get-docker/)
+
+---
+
+## 🧠 Local AI Lab
+
+This project is the **core** of [manzolo's Local AI Lab](https://github.com/manzolo/local-ai-lab) — a family of self-hosted AI projects (LLM, voice, vision & documents) that share the same conventions.
+
+This stack **owns the shared `local-ai-net` Docker network**: start it first, then attach any sibling project with its `docker-compose.local-ai.yml` override. From inside the network, the Ollama API is always at `http://ollama:11434`.
+
+Explore the whole family: [`topic:local-ai`](https://github.com/search?q=user%3Amanzolo+topic%3Alocal-ai&type=repositories)

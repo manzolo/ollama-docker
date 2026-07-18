@@ -1,6 +1,6 @@
 services:
   ollama:
-    image: ollama/ollama:0.4.3
+    image: ollama/ollama:0.16.2
     container_name: ollama
     runtime: nvidia
     volumes:
@@ -8,6 +8,8 @@ services:
     ports:
       - "11434:11434"
     restart: no
+    networks:
+      - local-ai-net
 
   open-webui:
     image: ghcr.io/open-webui/open-webui:cuda
@@ -20,4 +22,13 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: no
+    networks:
+      - local-ai-net
+
+# Shared network of the Local AI Lab family: sibling projects join it
+# with their docker-compose.local-ai.yml override.
+# See https://github.com/manzolo/local-ai-lab#conventions
+networks:
+  local-ai-net:
+    name: local-ai-net
 
