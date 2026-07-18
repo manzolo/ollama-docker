@@ -52,6 +52,8 @@ docker logs open-webui
 
 ## 🧠 Local AI Lab
 
+[![Local AI Lab](https://img.shields.io/badge/🧠_Local_AI_Lab-core-6e40c9?style=for-the-badge)](https://github.com/manzolo/local-ai-lab)
+
 This project is the **core** of [manzolo's Local AI Lab](https://github.com/manzolo/local-ai-lab) — a family of self-hosted AI projects (LLM, voice, vision & documents) that share the same conventions.
 
 This stack **owns the shared `local-ai-net` Docker network**: start it first, then attach any sibling project with its `docker-compose.local-ai.yml` override. From inside the network, the Ollama API is always at `http://ollama:11434`.
